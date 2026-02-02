@@ -1,4 +1,4 @@
-SELECT DISTINCT user_id 
+SELECT DISTINCT e.user_id 
 
 
 FROM emails e 
