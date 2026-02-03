@@ -1,5 +1,5 @@
 
--------------------More efficient & generalized Solution----------------
+-------------------More efficient, optimized & generalized Solution----------------
 SELECT 
   EXTRACT(MONTH FROM curr_month.event_date) AS month, 
   COUNT(DISTINCT curr_month.user_id) AS monthly_active_users 
@@ -20,7 +20,7 @@ WHERE EXISTS
 GROUP BY EXTRACT(MONTH FROM curr_month.event_date);
 
 
------------Alternative Solution (But NOT as Efficient as previous Solution)-------------------
+-----------Alternative Solution (But NOT as Efficient as previous Solution) / Redundant-------------------
 WITH cte AS (
     SELECT DISTINCT user_id
     FROM user_actions
