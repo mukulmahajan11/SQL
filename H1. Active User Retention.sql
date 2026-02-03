@@ -1,3 +1,5 @@
+
+-------------------More efficient & generalized Solution----------------
 SELECT 
   EXTRACT(MONTH FROM curr_month.event_date) AS month, 
   COUNT(DISTINCT curr_month.user_id) AS monthly_active_users 
